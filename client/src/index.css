@@ -1,0 +1,105 @@
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about, .sales, .rental, .team, .contact {
+  min-height: 100vh;
+}
+.about, .rental, .team, .contact > h2 {
+  margin: 100px auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer {
+  height: 8vh;
+  position: relative;
+  background-color: #002349;
+}
+
+.navbar{
+  width: 100%;
+  min-height: 6vh;
+  color: #ffffff;
+  box-sizing: border-box;
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #002349;
+  transition: all .7s ease-in;
+}
+
+.navbar-sticky {
+  background: #002349;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 1px 1px 1px #222;
+  animation: moveDown 0.5s ease-in-out;
+}
+
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-5rem);
+  }
+  to {
+    transform: translateY(0rem);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: rotateY(0rem);
+  }
+}
+.scrolled{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
+}
+.logo img{
+  width: 50px;
+}
+
+.header {
+  position: sticky;
+}
+
+/* Navbar Styles */
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  padding: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.active {
+  font-weight: 600;
+  border-bottom: 3px solid red;
+}

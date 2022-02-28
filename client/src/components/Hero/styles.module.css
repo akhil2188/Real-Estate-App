@@ -1,0 +1,25 @@
+.hero {
+    background-image:   linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ), url('../../img/modernHouse.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    justify-content: center;
+    color: #ffffff;
+   
+  }
+
+ .hero-body > h2 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+ 

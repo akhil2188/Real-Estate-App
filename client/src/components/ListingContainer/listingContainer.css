@@ -1,0 +1,95 @@
+/* breweries styles */
+
+.filterData {
+    padding: 1rem;
+    margin: 0 20px;
+	z-index: 0;
+}
+
+.listingContainer {
+	min-width: 100%;
+}
+
+.listing-wrapper {
+	padding: 2rem;
+	z-index: 0;
+    display: grid;
+}
+.listing-area {
+	padding: 2rem;
+	z-index: 0;
+    display: grid;
+	grid-template-columns: repeat(3, minmax(400px, 3fr));
+	/* grid-gap: 1rem; */
+	grid-column-gap: 10px;
+	grid-row-gap: 30px;
+  }
+  
+  /* .listing-area > ul > li {
+	border: 1px solid #E2E2E2;
+	border-radius: .5rem;
+  } */
+  
+  .listing-area > ul > li > figure {
+	max-height: 220px;
+	overflow: hidden;
+	border-top-left-radius: .5rem;
+	border-top-right-radius: .5rem;
+	position: relative;
+  }
+  
+  .listing-area > ul > li > figure > img {
+	width: 100%;
+  }
+  
+  .listing-area > ul > li > figure > figcaption {
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0,0,0,.7);
+	width: 100%;
+  }
+  
+  .listing-area > ul > li > figure > figcaption > h3 {
+	color: white;
+	padding: .75rem;
+	font-size: 1.25rem;
+  }
+  
+  .listing-area > ul > li > p {
+	font-size: 1rem;
+	line-height: 1.5;
+	padding: 1rem .75rem;
+	color: #666666;
+  }
+  
+  .listing-area > ul > li > a {
+	padding: .5rem 1rem;
+	/* margin: .5rem; */
+  }
+
+  .paginationBttns {
+	  width: 100%;
+	  margin-top: 50px ;
+	  height: 40px;
+	  list-style: none;
+	  display: flex;
+	  justify-content: center;
+  }
+
+  .paginationBttns li a {
+	  padding: 15px;
+	  /* margin: 3px;
+	  border-radius: 5px; */
+	  border: 1px solid #d3d3d3;
+	  color: #147df5;
+  }
+
+  .paginationBttns a:hover {
+	  color: white !important;
+	  background-color: #147df5;
+  }
+
+.paginationActive a {
+	color: white !important;
+	background-color: #147df5;
+}

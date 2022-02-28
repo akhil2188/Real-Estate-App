@@ -7,9 +7,9 @@ Run the Code
 
 For client-side:
 
-  cd client
-  npm install
-  npm start
+ --> cd client
+ --> npm install
+ --> npm start
 
 
 For server-side:
